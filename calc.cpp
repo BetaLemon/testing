@@ -1,19 +1,21 @@
 #include <iostream>
 using namespace std;
 
+// Basic calculator. Created by BetaLemon. 16/10/2016.
+
 int main(){
 
-  floor number1 = 0;
-  floor number2 = 0;
-  char operation = "";
-  floor result = 0;
+  int number1 = 0;
+  int number2 = 0;
+  char operation;
+  int result = 0;
   int askNumber = 1;
 
   cout << "Hi! This is a calculator.";
 
   while(askNumber){
     cout << "Please enter a number,";
-    cout << "an operator and a second number, separated with enters:\n";
+    cout << "an operator and a second number:\n";
     cin >> number1;
     cin >> operation;
     cin >> number2;
@@ -40,7 +42,7 @@ int main(){
       result = number1 / number2;
       break;
     default:
-      cout << "Non valid operator."
+      cout << "Non valid operator.";
       break;
   }
 
